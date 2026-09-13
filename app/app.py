@@ -6,6 +6,7 @@ Run with:  streamlit run app.py
 Requires:  insurance.csv in the same folder as this script.
 """
 
+import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -36,7 +37,12 @@ ALPHA = 0.05
 # ----------------------------------------------------------------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("insurance.csv")
+    # Get the exact directory where this app.py file is located
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(current_dir, "insurance.csv")
+    
+    # Load the dataset safely
+    df = pd.read_csv(file_path)
     return df
 
 
