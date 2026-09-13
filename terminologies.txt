@@ -1,0 +1,22 @@
+Shapiro-Wilk
+- It is a statistical experiment or test we do to see if our data is normally distributed or not. If our data IS normally distributed then it is NULL HYPO and if not then it is ALTERNATIVE HYPO.
+- If p-value is less than our signifance level (alpha = 0.05), meaning our data is signifanctly different from a normal distribution. So we have to reject NULL HYPO otherwise we assume normality.
+
+Equal Variance
+- It is where we compare variance across different groups to see whether they have a similar amount of spread in their data or not.
+
+Two-Sample t-test
+- A parametric test used to determine if there is a statistically significant difference between the means of two independent groups (assumes data is normally distributed with equal variances).  
+
+Mann-Whitney U test
+- A non-parametric alternative to the two-sample t-test. It compares the distributions of two independent groups using ranks instead of means, making it ideal when data is skewed or not normally distributed.
+
+One-Way ANOVA (Analysis of Variance)
+- A statistical test used to determine if there are any statistically significant differences between the means of three or more independent groups.  
+
+Gauss-Markov Diagnostic Checks
+- A set of tests used on linear regression models to validate core assumptions (like linearity, homoscedasticity, normality of residuals, and no multicollinearity) to ensure our OLS estimates are unbiased and reliable.
+
+Variance Inflation Factor (VIF)
+- A metric used to detect multicollinearity by measuring how much the variance of an estimated regression coefficient is increased because of collinearity with other predictors; values above 5 or 10 usually signal a problem.
+
